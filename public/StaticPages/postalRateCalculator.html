@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CS313 Postal Rate Calculator</title>
+</head>
+<body>
+    <h1>Prove 09: Postal Rate Calculator</h1>
+    <form id="calculator" name="calculator" method="post" target="">
+        <label for="type">Select the parcel type:</label>
+        <br />
+        <select name="type" id="type">
+            <option name="type" id="stamped" value="stamped">Letter (Stamped)</option>
+            <option name="type" id="metered" value="metered">Letter (Metered)</option>
+            <option name="type" id="largeEnvelope" value="largeEnvelope">Large Envelopes (Flats)</option>
+            <option name="type" id="package" value="package">First-Class Package Service - Retail</option>
+        </select>
+        <label for="weight">Parcel Weight</label>
+        <br />
+        <input type="number" id="weight" name="weight" min="0" placeholder="0"/> 
+        <br />
+        <input type="submit" id="submit" name="submit" value="Calculate Rate" />
+    </form>
+</body>
+</html>

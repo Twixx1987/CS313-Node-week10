@@ -1,32 +1,37 @@
 <nav class="navbar navbar-default navbar-static-top navbar-inverse">
   <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+    <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
+      <li class="nav-item flex-sm-fill text-sm-center">
+        <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/homepage.php">Hobby</a>
       </li>
-      <li>
-        <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
+      <li class="nav-item dropdown flex-sm-fill text-sm-center">
+        <a class="nav-link menu-items flex-sm-fill text-sm-center dropdown-toggle btn btn-secondary" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teach Assignments</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/assignments.php">Assignments Home</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week02/teach02.php">Teach 02 - Web Refresher</a>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week03/teach03.php">Teach 03 - PHP Forms</a>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week05/teach05.php">Teach 05 - PHP Database Access</a>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week06/teach06.php">Teach 06 - PHP Database Update</a>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week07/signin.php">Teach 07 - PHP Database Login Validation</a>
+        </div>
       </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started with Go on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-            <li class="divider"></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-          </ul>
+      <li class="nav-item dropdown flex-sm-fill text-sm-center">
+        <a class="nav-link menu-items flex-sm-fill text-sm-center dropdown-toggle btn btn-secondary" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ponder Assignments</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/assignments.php">Assignments Home</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/homepage.php">Ponder 02 - King\'s Initiative Blog</a>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week03/browse.php">Ponder 03 - Shopping Cart</a>
+        </div>
       </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
+      <li class="nav-item dropdown flex-sm-fill text-sm-center">
+        <a class="nav-link menu-items flex-sm-fill text-sm-center dropdown-toggle btn btn-secondary" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/assignments.php">Assignments Home</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/project1/rdilogin.php">Project 1 - Red Dragon Inn Tracker</a>
+        </div>
       </li>
     </ul>
   </div>
