@@ -1,19 +1,82 @@
+body
+{
+    font-size: 18px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.btnAddClass {
+    @include btn;
+    @include btn-secondary;
+    @include rounded;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.label
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-items
+{
+    font-size: 18px;
+    font-family: 'Book Antiqua', Times, serif;
+}
+
+.menu-list
+{
+    font-size: 18px;
+    font-family: 'Book Antiqua', Times, serif;
+}
+
+.menu
+{
+    @include bg-dark;
+}
+
+.noStyle
+{
+    list-style-type: none;
+}
+
+.pagetitle
+{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include text-body;
+}
+
+.required
+{
+    color: red;
+    font-weight: bold;
+}
+
 .jumbotron {
   background: #532F8C;
   color: white;
   padding-bottom: 80px; }
-  .jumbotron .btn-primary {
+
+.jumbotron .btn-primary {
     background: #845ac7;
     border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
+
+.jumbotron .btn-primary:hover {
       background: #7646c1; }
-  .jumbotron p {
+
+.jumbotron p {
     color: #d9ccee;
     max-width: 75%;
     margin: 1em auto 2em; }
-  .navbar + .jumbotron {
+
+.navbar + .jumbotron {
     margin-top: -20px; }
-  .jumbotron .lang-logo {
+
+.jumbotron .lang-logo {
     display: block;
     background: #B01302;
     border-radius: 50%;
@@ -22,6 +85,7 @@
     height: 100px;
     margin: auto;
     border: 2px solid white; }
-    .jumbotron .lang-logo img {
+
+.jumbotron .lang-logo img {
       max-width: 100%; }
 

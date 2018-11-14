@@ -2,11 +2,12 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <% include ../partials/header %>
     <title>CS313 Postal Rate Calculator</title>
 </head>
 <body>
     <h1>Prove 09: Postal Rate Calculator</h1>
+    <% include ../partials/nav %>
     <form id="calculator" name="calculator" method="post" action="/rateCalc">
         <label for="type">Select the parcel type:</label>
         <br />
@@ -26,7 +27,8 @@
     <div>
         <% if(rate != null) { %>
             <p>
-                The calculated rate is $<%= rate %>
+                The calculated rate is 
+                <% if(rate > 0) { %>$<% } %><%= rate %>
             </p>
         <% } %>
     </div>
