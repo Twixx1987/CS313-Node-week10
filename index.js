@@ -11,7 +11,11 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/rateCalc', (req, res) => res.render('pages/postalRateCalculator', { rate: null }))
+  .get('/rateCalc', (req, res) => res.render('pages/postalRateCalculator', {
+      type: null,
+      weight: null,
+      rate: null
+  }))
   .post('/rateCalc', (req, res) => {
       let type = req.body.type;
       let weight = req.body.weight;
