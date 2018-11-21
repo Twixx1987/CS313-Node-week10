@@ -23,6 +23,7 @@ express()
             db.query(`SELECT * FROM person WHERE id = ${id}`).then(result => {
                 res.setHeader('Content-Type', 'application/json');
                 res.send(JSON.stringify(result.rows[0]));
+                console.log(JSON.stringify(result.rows[0]));
                 db.end();
             });
         });
